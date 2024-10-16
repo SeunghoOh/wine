@@ -27,6 +27,7 @@ jobs:
         run: | 
           echo "## Model metrics" >> report.md
           cat metrics.txt >> report.md
+          echo "![](./plot.png)" >> report.md
           cml comment create report.md
 
           
